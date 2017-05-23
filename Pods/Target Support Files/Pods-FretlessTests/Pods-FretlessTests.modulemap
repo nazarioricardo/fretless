@@ -1,0 +1,6 @@
+framework module Pods_FretlessTests {
+  umbrella header "Pods-FretlessTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

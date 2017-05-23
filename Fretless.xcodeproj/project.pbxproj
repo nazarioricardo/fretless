@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E7766921BFEF76FE421C091 /* Pods_FretlessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21C031954720076777C9EA4 /* Pods_FretlessUITests.framework */; };
+		8C0324731E60E27C00062B8D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0324721E60E27C00062B8D /* BaseViewController.swift */; };
+		8C6A6ABF1EA3056500C816F0 /* Audiobus.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8C6A6ABE1EA3056500C816F0 /* Audiobus.txt */; };
+		8C8494B61EA023AC00467D30 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8494B51EA023AC00467D30 /* AudioToolbox.framework */; };
+		8C8494B91EA033CC00467D30 /* Audiobus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8494B81EA033CC00467D30 /* Audiobus.swift */; };
+		8C881D671EBABC99001F378A /* SegmentedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C881D661EBABC99001F378A /* SegmentedController.swift */; };
+		8CB2F4161EB24DAE0096E541 /* KeyBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2F4151EB24DAE0096E541 /* KeyBoardView.swift */; };
+		8CB2F4181EB250230096E541 /* TouchIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2F4171EB250230096E541 /* TouchIndicatorView.swift */; };
+		8CC121521E5E1A2300D22345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC121511E5E1A2300D22345 /* AppDelegate.swift */; };
+		8CC121541E5E1A2300D22345 /* KeyBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC121531E5E1A2300D22345 /* KeyBoardViewController.swift */; };
+		8CC121571E5E1A2300D22345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC121551E5E1A2300D22345 /* Main.storyboard */; };
+		8CC121591E5E1A2300D22345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC121581E5E1A2300D22345 /* Assets.xcassets */; };
+		8CC1215C1E5E1A2300D22345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC1215A1E5E1A2300D22345 /* LaunchScreen.storyboard */; };
+		8CC121671E5E1A2300D22345 /* FretlessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC121661E5E1A2300D22345 /* FretlessTests.swift */; };
+		8CC121721E5E1A2400D22345 /* FretlessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC121711E5E1A2400D22345 /* FretlessUITests.swift */; };
+		8CC121821E5E1B1F00D22345 /* KeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC121811E5E1B1F00D22345 /* KeyView.swift */; };
+		8CDC57071ED390C70099C5FD /* ThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC57061ED390C70099C5FD /* ThumbView.swift */; };
+		8CF4D1131EB423A000C5AE2C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF4D1121EB423A000C5AE2C /* GradientView.swift */; };
+		AADCEFE2D9887323571CC04C /* Pods_Fretless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC681D6D540B883DA7A9AB9 /* Pods_Fretless.framework */; };
+		E77E8E405177625C84C65747 /* Pods_FretlessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E142BF4E5783BCF54D19F785 /* Pods_FretlessTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CC121631E5E1A2300D22345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CC121461E5E1A2300D22345 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CC1214D1E5E1A2300D22345;
+			remoteInfo = Fretless;
+		};
+		8CC1216E1E5E1A2400D22345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CC121461E5E1A2300D22345 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CC1214D1E5E1A2300D22345;
+			remoteInfo = Fretless;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07E4802A09E3FC696DA67EC1 /* Pods-Fretless.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fretless.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fretless/Pods-Fretless.debug.xcconfig"; sourceTree = "<group>"; };
+		08CD9D501FCDC21BF7C628A8 /* Pods-FretlessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FretlessTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FretlessTests/Pods-FretlessTests.release.xcconfig"; sourceTree = "<group>"; };
+		58E3768759647ABA2F4D990A /* Pods-FretlessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FretlessUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FretlessUITests/Pods-FretlessUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8C0324721E60E27C00062B8D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8C6A6ABE1EA3056500C816F0 /* Audiobus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Audiobus.txt; path = Fretless/Audiobus.txt; sourceTree = SOURCE_ROOT; };
+		8C8494B41EA023AC00467D30 /* Fretless.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fretless.entitlements; sourceTree = "<group>"; };
+		8C8494B51EA023AC00467D30 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8C8494B71EA033A700467D30 /* Fretless-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Fretless-BridgingHeader.h"; path = "Fretless/Fretless-BridgingHeader.h"; sourceTree = SOURCE_ROOT; };
+		8C8494B81EA033CC00467D30 /* Audiobus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Audiobus.swift; path = Fretless/Audiobus.swift; sourceTree = SOURCE_ROOT; };
+		8C881D661EBABC99001F378A /* SegmentedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedController.swift; sourceTree = "<group>"; };
+		8CB2F4151EB24DAE0096E541 /* KeyBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBoardView.swift; sourceTree = "<group>"; };
+		8CB2F4171EB250230096E541 /* TouchIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIndicatorView.swift; sourceTree = "<group>"; };
+		8CC1214E1E5E1A2300D22345 /* Fretless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fretless.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC121511E5E1A2300D22345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CC121531E5E1A2300D22345 /* KeyBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardViewController.swift; sourceTree = "<group>"; };
+		8CC121561E5E1A2300D22345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CC121581E5E1A2300D22345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CC1215B1E5E1A2300D22345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CC1215D1E5E1A2300D22345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CC121621E5E1A2300D22345 /* FretlessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FretlessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC121661E5E1A2300D22345 /* FretlessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FretlessTests.swift; sourceTree = "<group>"; };
+		8CC121681E5E1A2300D22345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CC1216D1E5E1A2400D22345 /* FretlessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FretlessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC121711E5E1A2400D22345 /* FretlessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FretlessUITests.swift; sourceTree = "<group>"; };
+		8CC121731E5E1A2400D22345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CC121811E5E1B1F00D22345 /* KeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyView.swift; path = Fretless/KeyView.swift; sourceTree = SOURCE_ROOT; };
+		8CDC57061ED390C70099C5FD /* ThumbView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbView.swift; sourceTree = "<group>"; };
+		8CF4D1121EB423A000C5AE2C /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		A6F50B51704219466D6D0802 /* Pods-FretlessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FretlessTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FretlessTests/Pods-FretlessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B821C48701022281AC245A3C /* Pods-Fretless.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fretless.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fretless/Pods-Fretless.release.xcconfig"; sourceTree = "<group>"; };
+		C21C031954720076777C9EA4 /* Pods_FretlessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FretlessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF8307A268282FA539254F75 /* Pods-FretlessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FretlessUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FretlessUITests/Pods-FretlessUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E142BF4E5783BCF54D19F785 /* Pods_FretlessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FretlessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC681D6D540B883DA7A9AB9 /* Pods_Fretless.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fretless.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CC1214B1E5E1A2300D22345 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADCEFE2D9887323571CC04C /* Pods_Fretless.framework in Frameworks */,
+				8C8494B61EA023AC00467D30 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC1215F1E5E1A2300D22345 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77E8E405177625C84C65747 /* Pods_FretlessTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC1216A1E5E1A2400D22345 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E7766921BFEF76FE421C091 /* Pods_FretlessUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		335E268425125D2DFA0ED50F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07E4802A09E3FC696DA67EC1 /* Pods-Fretless.debug.xcconfig */,
+				B821C48701022281AC245A3C /* Pods-Fretless.release.xcconfig */,
+				A6F50B51704219466D6D0802 /* Pods-FretlessTests.debug.xcconfig */,
+				08CD9D501FCDC21BF7C628A8 /* Pods-FretlessTests.release.xcconfig */,
+				DF8307A268282FA539254F75 /* Pods-FretlessUITests.debug.xcconfig */,
+				58E3768759647ABA2F4D990A /* Pods-FretlessUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5CF9F9046EF3638A4A57349C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C8494B51EA023AC00467D30 /* AudioToolbox.framework */,
+				EBC681D6D540B883DA7A9AB9 /* Pods_Fretless.framework */,
+				E142BF4E5783BCF54D19F785 /* Pods_FretlessTests.framework */,
+				C21C031954720076777C9EA4 /* Pods_FretlessUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C881D621EBAAD33001F378A /* Audiobus */ = {
+			isa = PBXGroup;
+			children = (
+				8C8494B81EA033CC00467D30 /* Audiobus.swift */,
+				8C8494B71EA033A700467D30 /* Fretless-BridgingHeader.h */,
+				8C6A6ABE1EA3056500C816F0 /* Audiobus.txt */,
+			);
+			name = Audiobus;
+			sourceTree = "<group>";
+		};
+		8C881D631EBAAD45001F378A /* KeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				8CC121531E5E1A2300D22345 /* KeyBoardViewController.swift */,
+				8CB2F4151EB24DAE0096E541 /* KeyBoardView.swift */,
+				8CC121811E5E1B1F00D22345 /* KeyView.swift */,
+				8C881D641EBAAD5C001F378A /* Touch Indicator */,
+			);
+			name = KeyBoard;
+			sourceTree = "<group>";
+		};
+		8C881D641EBAAD5C001F378A /* Touch Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				8CB2F4171EB250230096E541 /* TouchIndicatorView.swift */,
+				8CF4D1121EB423A000C5AE2C /* GradientView.swift */,
+			);
+			name = "Touch Indicator";
+			sourceTree = "<group>";
+		};
+		8C881D651EBAAD6A001F378A /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				8C0324721E60E27C00062B8D /* BaseViewController.swift */,
+				8C881D661EBABC99001F378A /* SegmentedController.swift */,
+				8CDC57061ED390C70099C5FD /* ThumbView.swift */,
+			);
+			name = BaseView;
+			sourceTree = "<group>";
+		};
+		8CC121451E5E1A2300D22345 = {
+			isa = PBXGroup;
+			children = (
+				8CC121501E5E1A2300D22345 /* Fretless */,
+				8CC121651E5E1A2300D22345 /* FretlessTests */,
+				8CC121701E5E1A2400D22345 /* FretlessUITests */,
+				8CC1214F1E5E1A2300D22345 /* Products */,
+				335E268425125D2DFA0ED50F /* Pods */,
+				5CF9F9046EF3638A4A57349C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8CC1214F1E5E1A2300D22345 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CC1214E1E5E1A2300D22345 /* Fretless.app */,
+				8CC121621E5E1A2300D22345 /* FretlessTests.xctest */,
+				8CC1216D1E5E1A2400D22345 /* FretlessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CC121501E5E1A2300D22345 /* Fretless */ = {
+			isa = PBXGroup;
+			children = (
+				8C8494B41EA023AC00467D30 /* Fretless.entitlements */,
+				8C881D621EBAAD33001F378A /* Audiobus */,
+				8CC121511E5E1A2300D22345 /* AppDelegate.swift */,
+				8C881D651EBAAD6A001F378A /* BaseView */,
+				8C881D631EBAAD45001F378A /* KeyBoard */,
+				8CC121551E5E1A2300D22345 /* Main.storyboard */,
+				8CC121581E5E1A2300D22345 /* Assets.xcassets */,
+				8CC1215A1E5E1A2300D22345 /* LaunchScreen.storyboard */,
+				8CC1215D1E5E1A2300D22345 /* Info.plist */,
+			);
+			path = Fretless;
+			sourceTree = "<group>";
+		};
+		8CC121651E5E1A2300D22345 /* FretlessTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CC121661E5E1A2300D22345 /* FretlessTests.swift */,
+				8CC121681E5E1A2300D22345 /* Info.plist */,
+			);
+			path = FretlessTests;
+			sourceTree = "<group>";
+		};
+		8CC121701E5E1A2400D22345 /* FretlessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8CC121711E5E1A2400D22345 /* FretlessUITests.swift */,
+				8CC121731E5E1A2400D22345 /* Info.plist */,
+			);
+			path = FretlessUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CC1214D1E5E1A2300D22345 /* Fretless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CC121761E5E1A2400D22345 /* Build configuration list for PBXNativeTarget "Fretless" */;
+			buildPhases = (
+				EDBB3852778ED13499877C26 /* [CP] Check Pods Manifest.lock */,
+				8CC1214A1E5E1A2300D22345 /* Sources */,
+				8CC1214B1E5E1A2300D22345 /* Frameworks */,
+				8CC1214C1E5E1A2300D22345 /* Resources */,
+				1A619EE73D6D2B51B6D77B5F /* [CP] Embed Pods Frameworks */,
+				30EF7DEAD7B91AD0CE4F7A85 /* [CP] Copy Pods Resources */,
+				8C6A6ABD1EA3003700C816F0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fretless;
+			productName = Fretless;
+			productReference = 8CC1214E1E5E1A2300D22345 /* Fretless.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CC121611E5E1A2300D22345 /* FretlessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CC121791E5E1A2400D22345 /* Build configuration list for PBXNativeTarget "FretlessTests" */;
+			buildPhases = (
+				CD833226FE5902C3E380936D /* [CP] Check Pods Manifest.lock */,
+				8CC1215E1E5E1A2300D22345 /* Sources */,
+				8CC1215F1E5E1A2300D22345 /* Frameworks */,
+				8CC121601E5E1A2300D22345 /* Resources */,
+				AA28AD785E47489393C57766 /* [CP] Embed Pods Frameworks */,
+				7C13922BBAA27192CE2B452A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CC121641E5E1A2300D22345 /* PBXTargetDependency */,
+			);
+			name = FretlessTests;
+			productName = FretlessTests;
+			productReference = 8CC121621E5E1A2300D22345 /* FretlessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8CC1216C1E5E1A2400D22345 /* FretlessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CC1217C1E5E1A2400D22345 /* Build configuration list for PBXNativeTarget "FretlessUITests" */;
+			buildPhases = (
+				3359CFCB6E52ED6573E05EC3 /* [CP] Check Pods Manifest.lock */,
+				8CC121691E5E1A2400D22345 /* Sources */,
+				8CC1216A1E5E1A2400D22345 /* Frameworks */,
+				8CC1216B1E5E1A2400D22345 /* Resources */,
+				76CBB7CE37097AD2667ED527 /* [CP] Embed Pods Frameworks */,
+				38476E48505434FD6C290CB0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CC1216F1E5E1A2400D22345 /* PBXTargetDependency */,
+			);
+			name = FretlessUITests;
+			productName = FretlessUITests;
+			productReference = 8CC1216D1E5E1A2400D22345 /* FretlessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CC121461E5E1A2300D22345 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ricardo Nazario";
+				TargetAttributes = {
+					8CC1214D1E5E1A2300D22345 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = SGRW3864BW;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+						};
+					};
+					8CC121611E5E1A2300D22345 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = SGRW3864BW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8CC1214D1E5E1A2300D22345;
+					};
+					8CC1216C1E5E1A2400D22345 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = SGRW3864BW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8CC1214D1E5E1A2300D22345;
+					};
+				};
+			};
+			buildConfigurationList = 8CC121491E5E1A2300D22345 /* Build configuration list for PBXProject "Fretless" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CC121451E5E1A2300D22345;
+			productRefGroup = 8CC1214F1E5E1A2300D22345 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CC1214D1E5E1A2300D22345 /* Fretless */,
+				8CC121611E5E1A2300D22345 /* FretlessTests */,
+				8CC1216C1E5E1A2400D22345 /* FretlessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CC1214C1E5E1A2300D22345 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC1215C1E5E1A2300D22345 /* LaunchScreen.storyboard in Resources */,
+				8CC121591E5E1A2300D22345 /* Assets.xcassets in Resources */,
+				8C6A6ABF1EA3056500C816F0 /* Audiobus.txt in Resources */,
+				8CC121571E5E1A2300D22345 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC121601E5E1A2300D22345 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC1216B1E5E1A2400D22345 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A619EE73D6D2B51B6D77B5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fretless/Pods-Fretless-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30EF7DEAD7B91AD0CE4F7A85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fretless/Pods-Fretless-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3359CFCB6E52ED6573E05EC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		38476E48505434FD6C290CB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FretlessUITests/Pods-FretlessUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76CBB7CE37097AD2667ED527 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FretlessUITests/Pods-FretlessUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C13922BBAA27192CE2B452A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FretlessTests/Pods-FretlessTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C6A6ABD1EA3003700C816F0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/AudioKit.framework/fix-framework.sh";
+		};
+		AA28AD785E47489393C57766 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FretlessTests/Pods-FretlessTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD833226FE5902C3E380936D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EDBB3852778ED13499877C26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CC1214A1E5E1A2300D22345 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C8494B91EA033CC00467D30 /* Audiobus.swift in Sources */,
+				8CC121541E5E1A2300D22345 /* KeyBoardViewController.swift in Sources */,
+				8C0324731E60E27C00062B8D /* BaseViewController.swift in Sources */,
+				8CB2F4161EB24DAE0096E541 /* KeyBoardView.swift in Sources */,
+				8CC121821E5E1B1F00D22345 /* KeyView.swift in Sources */,
+				8CB2F4181EB250230096E541 /* TouchIndicatorView.swift in Sources */,
+				8CF4D1131EB423A000C5AE2C /* GradientView.swift in Sources */,
+				8CC121521E5E1A2300D22345 /* AppDelegate.swift in Sources */,
+				8C881D671EBABC99001F378A /* SegmentedController.swift in Sources */,
+				8CDC57071ED390C70099C5FD /* ThumbView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC1215E1E5E1A2300D22345 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC121671E5E1A2300D22345 /* FretlessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC121691E5E1A2400D22345 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC121721E5E1A2400D22345 /* FretlessUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CC121641E5E1A2300D22345 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CC1214D1E5E1A2300D22345 /* Fretless */;
+			targetProxy = 8CC121631E5E1A2300D22345 /* PBXContainerItemProxy */;
+		};
+		8CC1216F1E5E1A2400D22345 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CC1214D1E5E1A2300D22345 /* Fretless */;
+			targetProxy = 8CC1216E1E5E1A2400D22345 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CC121551E5E1A2300D22345 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC121561E5E1A2300D22345 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CC1215A1E5E1A2300D22345 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC1215B1E5E1A2300D22345 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CC121741E5E1A2400D22345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CC121751E5E1A2400D22345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CC121771E5E1A2400D22345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07E4802A09E3FC696DA67EC1 /* Pods-Fretless.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Fretless/Fretless.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ricardo Nazario (SGRW3864BW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Fretless/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoNazario.Fretless;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Fretless/Fretless-BridgingHeader.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8CC121781E5E1A2400D22345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B821C48701022281AC245A3C /* Pods-Fretless.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Fretless/Fretless.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ricardo Nazario (SGRW3864BW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Fretless/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoNazario.Fretless;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Fretless/Fretless-BridgingHeader.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8CC1217A1E5E1A2400D22345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6F50B51704219466D6D0802 /* Pods-FretlessTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SGRW3864BW;
+				INFOPLIST_FILE = FretlessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoNazario.FretlessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fretless.app/Fretless";
+			};
+			name = Debug;
+		};
+		8CC1217B1E5E1A2400D22345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08CD9D501FCDC21BF7C628A8 /* Pods-FretlessTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SGRW3864BW;
+				INFOPLIST_FILE = FretlessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoNazario.FretlessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fretless.app/Fretless";
+			};
+			name = Release;
+		};
+		8CC1217D1E5E1A2400D22345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF8307A268282FA539254F75 /* Pods-FretlessUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SGRW3864BW;
+				INFOPLIST_FILE = FretlessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoNazario.FretlessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Fretless;
+			};
+			name = Debug;
+		};
+		8CC1217E1E5E1A2400D22345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58E3768759647ABA2F4D990A /* Pods-FretlessUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SGRW3864BW;
+				INFOPLIST_FILE = FretlessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoNazario.FretlessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Fretless;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CC121491E5E1A2300D22345 /* Build configuration list for PBXProject "Fretless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CC121741E5E1A2400D22345 /* Debug */,
+				8CC121751E5E1A2400D22345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CC121761E5E1A2400D22345 /* Build configuration list for PBXNativeTarget "Fretless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CC121771E5E1A2400D22345 /* Debug */,
+				8CC121781E5E1A2400D22345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CC121791E5E1A2400D22345 /* Build configuration list for PBXNativeTarget "FretlessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CC1217A1E5E1A2400D22345 /* Debug */,
+				8CC1217B1E5E1A2400D22345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CC1217C1E5E1A2400D22345 /* Build configuration list for PBXNativeTarget "FretlessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CC1217D1E5E1A2400D22345 /* Debug */,
+				8CC1217E1E5E1A2400D22345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CC121461E5E1A2300D22345 /* Project object */;
+}

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZkV-cu-yEm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base View Controller-->
+        <scene sceneID="0so-lP-I0f">
+            <objects>
+                <viewController id="ZkV-cu-yEm" customClass="BaseViewController" customModule="Fretless" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BzK-Le-fDe"/>
+                        <viewControllerLayoutGuide type="bottom" id="9N4-o1-JmW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qF8-nc-0Wf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="keys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geh-Lu-jnw">
+                                <rect key="frame" x="16" y="243" width="41" height="20"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="12" minValue="1" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="xcE-VN-amJ">
+                                <rect key="frame" x="14" y="271" width="347" height="31"/>
+                                <color key="tintColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="minimumTrackTintColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.31150835329999998" green="0.47834227439999999" blue="0.50608055730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="rangeSliderChanged:" destination="ZkV-cu-yEm" eventType="valueChanged" id="cpq-M3-I0i"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lqO-X1-l1Z">
+                                <rect key="frame" x="14" y="349" width="347" height="31"/>
+                                <color key="tintColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="minimumTrackTintColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.31150835329999998" green="0.47834227439999999" blue="0.50608055730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="attackSliderChanged:" destination="ZkV-cu-yEm" eventType="valueChanged" id="QK0-tc-nll"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="attack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAu-eV-g50">
+                                <rect key="frame" x="16" y="321" width="61.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBE-2E-3yf">
+                                <rect key="frame" x="182" y="321" width="10.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OP5-mK-N1X">
+                                <rect key="frame" x="182" y="399" width="10.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="release" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqr-Xt-6Bh">
+                                <rect key="frame" x="16" y="399" width="72" height="20"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.02" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NbM-yZ-H1b">
+                                <rect key="frame" x="14" y="427" width="347" height="31"/>
+                                <color key="tintColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="minimumTrackTintColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.31150835329999998" green="0.47834227439999999" blue="0.50608055730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="releaseSliderChanged:" destination="ZkV-cu-yEm" eventType="valueChanged" id="Qe2-dp-tsC"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotate your device to play Zario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZy-WE-lJY">
+                                <rect key="frame" x="43.5" y="563" width="289" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bz-jY-8YS" customClass="SegmentedController" customModule="Fretless" customModuleProvider="target">
+                                <rect key="frame" x="16" y="28" width="343" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Ljy-Te-0G7"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="range" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fw9-cR-yeg">
+                                <rect key="frame" x="16" y="90" width="52" height="20"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giM-1Y-gFk" customClass="SegmentedController" customModule="Fretless" customModuleProvider="target">
+                                <rect key="frame" x="16" y="118" width="343" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uq6-qk-Rcy"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="notePickerChanged:" destination="ZkV-cu-yEm" eventType="valueChanged" id="CdI-FW-1ad"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bf5-xm-pQ1" customClass="SegmentedController" customModule="Fretless" customModuleProvider="target">
+                                <rect key="frame" x="16" y="193" width="343" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pIr-sG-ODN"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="octaveSliderChanged:" destination="ZkV-cu-yEm" eventType="valueChanged" id="9rW-5Q-Ims"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="octave" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEC-Xh-cWr">
+                                <rect key="frame" x="16" y="166" width="61.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A3 - B4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLN-xq-EoL">
+                                <rect key="frame" x="116" y="85" width="142" height="30"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="A64-5s-tSQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="pdN-y8-PxT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OY4-Tl-2jl">
+                                <rect key="frame" x="177" y="243" width="20.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.20392156859999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fw9-cR-yeg" firstAttribute="top" secondItem="1bz-jY-8YS" secondAttribute="bottom" constant="13" id="310-JD-6iX"/>
+                            <constraint firstItem="KLN-xq-EoL" firstAttribute="top" secondItem="1bz-jY-8YS" secondAttribute="bottom" constant="8" id="3zg-rN-ZIl"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="giM-1Y-gFk" secondAttribute="leading" id="5SX-PP-arM"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="NbM-yZ-H1b" secondAttribute="leading" id="6aN-Zg-djI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fw9-cR-yeg" secondAttribute="leading" id="9EH-xV-DIj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="giM-1Y-gFk" secondAttribute="trailing" id="9Jg-Hh-ZZI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="yEC-Xh-cWr" secondAttribute="leading" id="ApR-x4-TGd"/>
+                            <constraint firstItem="OP5-mK-N1X" firstAttribute="centerY" secondItem="Tqr-Xt-6Bh" secondAttribute="centerY" id="BxP-dg-1P8"/>
+                            <constraint firstItem="OP5-mK-N1X" firstAttribute="centerX" secondItem="NbM-yZ-H1b" secondAttribute="centerX" id="Ibb-D0-NJS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Bf5-xm-pQ1" secondAttribute="leading" id="Ibi-qW-azU"/>
+                            <constraint firstItem="1bz-jY-8YS" firstAttribute="centerX" secondItem="qF8-nc-0Wf" secondAttribute="centerX" id="JUQ-h7-F2c"/>
+                            <constraint firstItem="1bz-jY-8YS" firstAttribute="top" secondItem="BzK-Le-fDe" secondAttribute="bottom" constant="8" id="Jyn-g6-ffx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Tqr-Xt-6Bh" secondAttribute="leading" id="KkK-YC-94y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1bz-jY-8YS" secondAttribute="trailing" id="KrL-iZ-Ct1"/>
+                            <constraint firstItem="NbM-yZ-H1b" firstAttribute="top" secondItem="Tqr-Xt-6Bh" secondAttribute="bottom" constant="8" id="LxL-G4-AYf"/>
+                            <constraint firstItem="Bf5-xm-pQ1" firstAttribute="top" secondItem="yEC-Xh-cWr" secondAttribute="bottom" constant="7" id="NoH-AX-bwi"/>
+                            <constraint firstItem="KLN-xq-EoL" firstAttribute="centerX" secondItem="qF8-nc-0Wf" secondAttribute="centerX" id="SJr-DS-wTr"/>
+                            <constraint firstItem="geh-Lu-jnw" firstAttribute="top" secondItem="Bf5-xm-pQ1" secondAttribute="bottom" constant="10" id="UsY-0K-wN6"/>
+                            <constraint firstItem="lqO-X1-l1Z" firstAttribute="top" secondItem="OAu-eV-g50" secondAttribute="bottom" constant="8" id="WG4-rk-XgU"/>
+                            <constraint firstItem="cBE-2E-3yf" firstAttribute="centerY" secondItem="OAu-eV-g50" secondAttribute="centerY" id="WRG-4M-dtW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bf5-xm-pQ1" secondAttribute="trailing" id="ZBK-JN-wUX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="geh-Lu-jnw" secondAttribute="leading" id="b2i-cc-RzM"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1bz-jY-8YS" secondAttribute="leading" id="cvQ-hd-zkh"/>
+                            <constraint firstItem="bZy-WE-lJY" firstAttribute="centerX" secondItem="qF8-nc-0Wf" secondAttribute="centerX" id="dVu-QL-mVB"/>
+                            <constraint firstItem="Tqr-Xt-6Bh" firstAttribute="top" secondItem="lqO-X1-l1Z" secondAttribute="bottom" constant="20" id="dWf-5z-LbQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="lqO-X1-l1Z" secondAttribute="leading" id="eD0-Eo-3Sg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="OAu-eV-g50" secondAttribute="leading" id="efF-v0-FSM"/>
+                            <constraint firstItem="yEC-Xh-cWr" firstAttribute="top" secondItem="giM-1Y-gFk" secondAttribute="bottom" constant="8" id="ewu-Jk-RhS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lqO-X1-l1Z" secondAttribute="trailing" id="gJc-7q-SHI"/>
+                            <constraint firstItem="OY4-Tl-2jl" firstAttribute="centerY" secondItem="geh-Lu-jnw" secondAttribute="centerY" id="hDK-Ps-eUm"/>
+                            <constraint firstItem="cBE-2E-3yf" firstAttribute="centerX" secondItem="lqO-X1-l1Z" secondAttribute="centerX" id="hPh-Bq-szl"/>
+                            <constraint firstItem="xcE-VN-amJ" firstAttribute="top" secondItem="geh-Lu-jnw" secondAttribute="bottom" constant="8" id="htf-r3-QVn"/>
+                            <constraint firstItem="OAu-eV-g50" firstAttribute="top" secondItem="xcE-VN-amJ" secondAttribute="bottom" constant="20" id="kVR-Kx-dgq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="xcE-VN-amJ" secondAttribute="leading" id="oZu-mf-iWD"/>
+                            <constraint firstItem="bZy-WE-lJY" firstAttribute="top" secondItem="NbM-yZ-H1b" secondAttribute="bottom" constant="106" id="omr-ix-ORI"/>
+                            <constraint firstItem="OY4-Tl-2jl" firstAttribute="centerX" secondItem="xcE-VN-amJ" secondAttribute="centerX" id="rfc-cG-i8S"/>
+                            <constraint firstItem="giM-1Y-gFk" firstAttribute="top" secondItem="1bz-jY-8YS" secondAttribute="bottom" constant="41" id="sJd-w7-Pao"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xcE-VN-amJ" secondAttribute="trailing" id="srE-3f-tUk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NbM-yZ-H1b" secondAttribute="trailing" id="ydI-Dn-VPI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="attackLabel" destination="cBE-2E-3yf" id="nI7-qZ-BTe"/>
+                        <outlet property="attackSlider" destination="lqO-X1-l1Z" id="8aa-9N-tXA"/>
+                        <outlet property="notePicker" destination="giM-1Y-gFk" id="9J0-DE-gSb"/>
+                        <outlet property="octavePicker" destination="Bf5-xm-pQ1" id="Tth-ES-Pb4"/>
+                        <outlet property="rangeIndicatorLabel" destination="KLN-xq-EoL" id="ca8-mE-Vme"/>
+                        <outlet property="rangeLabel" destination="OY4-Tl-2jl" id="v9I-ft-2BE"/>
+                        <outlet property="rangeSlider" destination="xcE-VN-amJ" id="VQU-V9-A5G"/>
+                        <outlet property="releaseLabel" destination="OP5-mK-N1X" id="fhr-v2-jJ0"/>
+                        <outlet property="releaseSlider" destination="NbM-yZ-H1b" id="4Yc-wI-bOs"/>
+                        <outlet property="waveformPicker" destination="1bz-jY-8YS" id="eOI-Ef-tvx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzY-W8-HOr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1300" y="6.746626686656672"/>
+        </scene>
+        <!--Key Board View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="KeyBoardViewController" id="BYZ-38-t0r" customClass="KeyBoardViewController" customModule="Fretless" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="37"/>
+        </scene>
+    </scenes>
+</document>
