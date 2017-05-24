@@ -27,14 +27,15 @@ class BaseViewController: UIViewController {
     @IBOutlet weak var releaseLabel: UILabel!
     
     var octaveMultiplier: Int!
+    var selectedNoteOn13: Int!
+    
+    var notes = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
+    
     var keys: Int {
         get {
             return Int(rangeSlider.value)
         }
     }
-    
-    var notes = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
-    
     var lowest: String {
         get {
             return notePicker.items[notePicker.selectedIndex]
@@ -52,7 +53,7 @@ class BaseViewController: UIViewController {
     }
     var highOct: String {
         get {
-            return String(octavePicker.selectedIndex + (keys/12) % notes.count)
+            return String((octavePicker.selectedIndex + ((selectedNoteOn13 + keys - 1) / 12)))
         }
     }
     
@@ -79,7 +80,24 @@ class BaseViewController: UIViewController {
     }
     
     func updateRangeIndicator() {
-        
+        switch notePicker.selectedIndex {
+        case 0:
+            selectedNoteOn13 = 0
+        case 1:
+            selectedNoteOn13 = 2
+        case 2:
+            selectedNoteOn13 = 4
+        case 3:
+            selectedNoteOn13 = 5
+        case 4:
+            selectedNoteOn13 = 7
+        case 5:
+            selectedNoteOn13 = 9
+        case 6:
+            selectedNoteOn13 = 11
+        default:
+            selectedNoteOn13 = 0
+        }
         rangeIndicatorLabel.text = "\(lowest)\(octave) - \(highest)\(highOct)"
     }
     
