@@ -17,6 +17,7 @@ class BaseViewController: UIViewController {
     @IBOutlet weak var notePicker: SegmentedController!
     @IBOutlet weak var octavePicker: SegmentedController!
     
+    @IBOutlet weak var rangeSubView: UIView!
     @IBOutlet weak var rangeSlider: UISlider!
     @IBOutlet weak var attackSlider: UISlider!
     @IBOutlet weak var releaseSlider: UISlider!
@@ -170,6 +171,9 @@ class BaseViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor(red: 225/255, green: 240/255, blue: 239/255, alpha: 1)
+        
+        rangeSubView.clipsToBounds = true
+        rangeSubView.layer.cornerRadius = 30
         
         waveformPicker.items = ["Sine","Triangle","Square","Saw"]
         notePicker.items = ["C","D","E","F","G","A","B"]
