@@ -182,12 +182,14 @@ class BaseViewController: UIViewController {
         rangeIndicatorLabel.clipsToBounds = true
         rangeIndicatorLabel.layer.cornerRadius = rangeIndicatorLabel.frame.height / 2
         
-        octaveMultiplier = Int(self.octavePicker.selectedIndex)
-        attackLabel.text = String(self.attackSlider.value)
-        releaseLabel.text = String(self.releaseSlider.value)
         waveformPicker.selectedIndex = 3
         notePicker.selectedIndex = 5
         octavePicker.selectedIndex = 3
+        
+        octaveMultiplier = Int(self.octavePicker.selectedIndex)
+        attackLabel.text = String(self.attackSlider.value)
+        releaseLabel.text = String(self.releaseSlider.value)
+        
         Audiobus.start()
         addGradient()
         updateRangeIndicator()

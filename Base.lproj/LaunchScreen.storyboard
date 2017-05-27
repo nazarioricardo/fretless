@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,16 +21,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="kSb-Lj-ioP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtWork" translatesAutoresizingMaskIntoConstraints="NO" id="fte-AE-7ed">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kSb-Lj-ioP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="SJe-wu-eXq"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="kSb-Lj-ioP" secondAttribute="bottom" id="fNA-Dd-bxs"/>
-                            <constraint firstAttribute="trailing" secondItem="kSb-Lj-ioP" secondAttribute="trailing" id="jht-9V-dPv"/>
-                            <constraint firstItem="kSb-Lj-ioP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="okT-wD-fku"/>
+                            <constraint firstItem="fte-AE-7ed" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="39p-Kr-4Mi"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="fte-AE-7ed" secondAttribute="bottom" id="9Gj-XL-PLH"/>
+                            <constraint firstAttribute="trailing" secondItem="fte-AE-7ed" secondAttribute="trailing" id="PO2-6A-9JH"/>
+                            <constraint firstItem="fte-AE-7ed" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="xgh-4M-t3I"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="iTunesArtwork" width="512" height="512"/>
+        <image name="iTunesArtWork" width="512" height="512"/>
     </resources>
 </document>
