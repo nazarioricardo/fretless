@@ -21,6 +21,9 @@ FOUNDATION_EXPORT const unsigned char AudioKitVersionString[];
 // Analysis
 #import "AKAmplitudeTrackerAudioUnit.h"
 #import "AKFrequencyTrackerAudioUnit.h"
+#if !TARGET_OS_TV
+#import "AKMicrophoneTrackerEngine.h"
+#endif
 
 // Effects
 #import "AKOperationEffectAudioUnit.h"
@@ -116,6 +119,7 @@ FOUNDATION_EXPORT const unsigned char AudioKitVersionString[];
 
 // Playback
 #import "AKPhaseLockedVocoderAudioUnit.h"
+#import "AKSamplePlayerAudioUnit.h"
 
 // Testing
 #import "AKOfflineRenderer.h"
