@@ -161,7 +161,7 @@ class BaseViewController: UIViewController {
         gradient.colors = [topColor.cgColor, botColor.cgColor]
         gradient.startPoint = CGPoint(x: 0.5, y: 1.0)
         gradient.endPoint = CGPoint(x: 0.5, y: 0)
-        gradient.frame = CGRect(x: 0, y: 0, width: self.view.bounds.height, height: self.view.bounds.height)
+        gradient.frame = CGRect(x: 0, y: 0, width: self.view.bounds.height * 4, height: self.view.bounds.height)
         
         self.view.layer.insertSublayer(gradient, above: self.view.layer.sublayers?.last)
     }
@@ -193,7 +193,12 @@ class BaseViewController: UIViewController {
         Audiobus.start()
         addGradient()
         updateRangeIndicator()
+    
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         
+
     }
 
     override func didReceiveMemoryWarning() {

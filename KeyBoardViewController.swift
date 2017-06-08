@@ -22,8 +22,8 @@ class KeyBoardViewController: UIViewController, KeyBoardDelegate {
     
     var noteColorIndex: Int = 0
     
-    var chosenOctave: Int!
-    var chosenNoteInterval: Int!
+    var chosenOctave: Int = 1
+    var chosenNoteInterval: Int = 12
     
     var selectedIndex: Int!
     var numberOfKeys: Int!
@@ -144,6 +144,7 @@ class KeyBoardViewController: UIViewController, KeyBoardDelegate {
         default:
             self.waveform = AKTable(.sawtooth, phase: 0, count: tableCount)
         }
+        
         
         oscillator = AKOscillator(waveform: waveform)
         oscillator.amplitude = 1
